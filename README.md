@@ -7,7 +7,7 @@ A Regex proves useful in matching a URL in order to locate special text patterns
 
 https?:\/\/(www\.)?[\d-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)
 Table of Contents
-Anchors
+*Anchors
 Quantifiers
 OR Operator
 Character Classes
