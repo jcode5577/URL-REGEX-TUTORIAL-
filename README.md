@@ -11,14 +11,14 @@ Table of Contents
 * Quantifiers
 * OR Operator
 * Character Classes
-Flags
-Grouping and Capturing
-Bracket Expressions
-Greedy and Lazy Match
-Boundaries
-Back-references
-Regex Components
-Anchors
+* Flags
+* Grouping and Capturing
+* Bracket Expressions
+* Greedy and Lazy Match
+* Boundaries
+* Back-references
+* Regex Components
+* Anchors
 Anchors are used at the beginning and end of searches to check if a string fully matches a pattern, although they themselves do not match characters. They strictly affirm a string matches a location. Anchors will create parameters.
 
 Use the ^ anchor to match the beginning of the text.
@@ -26,7 +26,7 @@ Use the $ anchor to match the end of the text.
 Quantifiers
 Quantifiers will measure and set the limit on the the number of characters that we are wanting to match in our Regex: + searches the pattern one or more times, ? searches the pattern zero or one time, * searches the pattern zero or more times. https? for= example. The ? will make the preceeding itme optional.
 
-OR Operator
+## OR Operator ##
 The purpose of an OR operator is to match the characters on the left or right of the operator, essentially serving as an or, as in and/or. Using the | as in m|M would match either m or an M from the string. If we had used https?:\/\/(www\.)?[\d-a|A it would search or a OR A.
 
 Character Classes
@@ -39,12 +39,12 @@ Flags are used at the end of a regex, after a closing slash. They are tokens tha
 https?:\/\/(www\.)?[\d-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)g
 Flag Expressions:
 
-i: Ignores casing. Makes expression case-sensitive
-g: Global. Makes expression search for all occurences
-s: Dot All. Makes the wild characters . match newlines as well
-m: Multiline. Makes boudnary characters ^ and $ match beginning and end of every line.
-y: Sticky. Indicates that it matches only from the index indicated by the lastIndex property of this regular expression in the target string (and does not attempt to match from any later indexes)
-u: Unicode. Expression assumes individual characters are code points, not code units and will then match 32 bit characters.
+* i: Ignores casing. Makes expression case-sensitive
+* g: Global. Makes expression search for all occurences
+* s: Dot All. Makes the wild characters . match newlines as well
+* m: Multiline. Makes boudnary characters ^ and $ match beginning and end of every line.
+* y: Sticky. Indicates that it matches only from the index indicated by the lastIndex property of this regular expression in the target string (and does not attempt to match from any later indexes)
+* u: Unicode. Expression assumes individual characters are code points, not code units and will then match 32 bit characters.
 Grouping and Capturing
 Capturing Group is a part of a pattern that can be enclosed in a parentheses () and is a way to treat multiple characters as one unit. The example expression has many groupings such as: https?:\/\/ which is looking for the http(s),(www\.)?[\d-a-zA-Z0-9@:%._\+~#=] which will look for initial domain, [a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=] looks for top level domain, and *) file paths.
 
