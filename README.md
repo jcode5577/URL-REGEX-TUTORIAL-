@@ -8,8 +8,8 @@ A Regex proves useful in matching a URL in order to locate special text patterns
 https?:\/\/(www\.)?[\d-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)
 ## Table of Contents
 * [Anchors](#anchors)
-* Quantifiers
-* OR Operator
+* [Quantifiers](#quantifiers)
+* OR Operator(#oroperator)
 * Character Classes
 * Flags
 * Grouping and Capturing
